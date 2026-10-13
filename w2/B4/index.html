@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm lớp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung mô phỏng điện thoại iPhone 13 -->
+    <div class="iphone-13-frame">
+        <div class="notch"></div>
+
+        <div class="screen">
+            <!-- Header ứng dụng -->
+            <div class="header">
+                <h3>Bảng điểm lớp</h3>
+            </div>
+
+            <!-- Thẻ tổng hợp phía trên (Điểm TB, Giỏi, Chưa có điểm, Cao nhất) -->
+            <div class="summary-card">
+                <div class="summary-top">
+                    <span class="summary-label">Điểm trung bình lớp</span>
+                    <h1 id="avg-score">0.00</h1>
+                </div>
+                <div class="summary-bottom">
+                    <div class="summary-item">
+                        <span class="s-title">Giỏi</span>
+                        <span id="count-gioi" class="s-value">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="s-title">Chưa có điểm</span>
+                        <span id="count-null" class="s-value">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="s-title">Cao nhất</span>
+                        <span id="max-score" class="s-value">0.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">DANH SÁCH - 5 SINH VIÊN</div>
+
+            <!-- Vùng chứa danh sách sinh viên render động từ JavaScript -->
+            <div id="student-list" class="student-list-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

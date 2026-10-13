@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung mô phỏng điện thoại iPhone 13 -->
+    <div class="iphone-13-frame">
+        <div class="notch"></div>
+
+        <div class="screen">
+            <!-- Header ứng dụng -->
+            <div class="header">
+                <h3>Danh sách sinh viên</h3>
+            </div>
+
+            <!-- Vùng chứa danh sách sinh viên được render tự động từ JavaScript -->
+            <div id="student-list" class="student-list-container"></div>
+
+            <!-- Phần tổng kết ở cuối danh sách -->
+            <div class="footer-summary">
+                <span id="total-students">Tổng: 0 sinh viên</span>
+                <span id="missing-email" style="color: red;">Thiếu email: 0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
