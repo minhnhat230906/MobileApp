@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành 3 - Máy Tính Cá Nhân</title>
+    <!-- Liên kết đến file CSS tự viết -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Khung mô phỏng điện thoại di động -->
+    <div class="phone-frame">
+        <div class="notch"></div>
+        
+        <div class="screen">
+            <!-- Tiêu đề ứng dụng -->
+            <div class="app-header">
+                <h3>Thực hành 03</h3>
+            </div>
+
+            <!-- Khu vực nội dung máy tính -->
+            <div class="calculator-body">
+                <!-- Ô nhập số thứ nhất -->
+                <div class="input-box">
+                    <input type="number" id="num1" placeholder="Nhập số thứ nhất">
+                </div>
+
+                <!-- Cụm 4 nút phép toán -->
+                <div class="operators-row">
+                    <button class="btn-op red" onclick="tinhToan('+')">+</button>
+                    <button class="btn-op yellow" onclick="tinhToan('-')">-</button>
+                    <button class="btn-op purple" onclick="tinhToan('*')">*</button>
+                    <button class="btn-op dark" onclick="tinhToan('/')">/</button>
+                </div>
+
+                <!-- Ô nhập số thứ hai -->
+                <div class="input-box">
+                    <input type="number" id="num2" placeholder="Nhập số thứ hai">
+                </div>
+
+                <!-- Vùng hiển thị kết quả -->
+                <div class="result-box">
+                    <span id="ketQuaText">Kết quả: </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Liên kết đến file JavaScript xử lý logic -->
+    <script src="script.js"></script>
+</body>
+</html>
