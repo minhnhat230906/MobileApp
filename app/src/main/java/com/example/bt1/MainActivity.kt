@@ -120,7 +120,7 @@ fun ProfileScreen() {
         }
     }
 }
-
+git add -A
 @Preview(showBackground = true)
 @Composable
 fun ProfileScreenPreview() {
